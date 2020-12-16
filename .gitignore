@@ -1,0 +1,17 @@
+/vendor
+/.idea
+/node_modules
+Homestead.yaml
+Homestead.json
+.env
+.env.DEMO
+.env.LIVE
+/.idea/groomit.me.iml
+.idea
+_ide_helper.php
+/resources/views/includes/api_default.blade.php
+/resources/views/includes/api_default.blade.11082019.php
+/resources/views/includes/api_footer.blade.php
+/resources/views/includes/api_header.blade.php
+/resources/views/includes/api_header.blade.06082019.php
+/resources/views/user/api/

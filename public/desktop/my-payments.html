@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Groomit</title>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+<link href="js/owlCarousel/assets/owl.carousel.min.css" rel="stylesheet">
+<link href="js/owlCarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<link href="css/header.css" rel="stylesheet">
+<link href="css/groomit.css" rel="stylesheet">
+<link href="css/appointment.css" rel="stylesheet" type="text/css">
+<link href="css/material-forms.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header class="black-bg">
+  <div class="container">
+    <div class="row" id="top-bar">
+      <div class="col-md-12">
+        <div class="hidden-sm hidden-xs custom-offset pull-left"></div>
+        <nav class="navbar navbar-groomit" role="navigation">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#groomit-navbar-collapse"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span> </button>
+            <a class="navbar-brand hidden-lg hidden-md hidden-sm" href="#"><img class="img-responsive" src="img/logo.png" alt="Groomit"/></a> </div>
+          <div class="collapse navbar-collapse" id="groomit-navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li> <a class="nav-link" data-text="Dashboard" href="index.html">Dashboard 
+                <!-- <span class="sr-only">(current)</span> --> 
+                </a> </li>
+              <li class="active"> <a class="nav-link" data-text="Appointments" href="#">Appointments 
+                <!-- <span class="sr-only">(current)</span> --> 
+                </a> </li>
+              <li> <a class="nav-link"  data-text="Dog Profile" href="#">Dog Profile 
+                <!-- <span class="sr-only">(current)</span> --> 
+                </a> </li>
+              <li> <a class="nav-link"  data-text="Payments" href="#">Payments 
+                <!-- <span class="sr-only">(current)</span> --> 
+                </a> </li>
+              <li> <a class="nav-link"  data-text="Messages" href="#">Messages 
+                <!-- <span class="sr-only">(current)</span> --> 
+                </a> </li>
+              <li> <a class="nav-link"  data-text="Help" href="#">Help 
+                <!-- <span class="sr-only">(current)</span> --> 
+                </a> </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown pull-right"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sofia <strong class="caret"></strong></a>
+                <ul class="dropdown-menu">
+                  <li> <a href="#">My Profile</a> </li>
+                  <li> <a href="#">Payments</a> </li>
+                  <li> <a href="#">Log Out</a> </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- /row -->
+    
+    <div class="row" id="logo">
+      <div class="col-md-12">
+        <div class="cont-logo hidden-xs pull-left"> <img class="img-responsive" src="img/logo.png" alt="Groomit"/> </div>
+        <!-- cont-logo -->
+        <div class="pull-left" id="breadcrumbs">
+          <h2 class="top-title">Book</h2>
+        </div>
+      </div>
+      <!-- /col-12 --> 
+    </div>
+    <!-- row -->
+    
+    <div id="appointment-summary">
+      <div class="row">
+        <div class="col-md-12">
+          <h4 class="top-package-title">SILVER PACKAGE</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-9">
+          <p>Oatmeal Shampoo - De-Matting | $30.00 </p>
+        </div>
+        <div class="col-sm-3 text-right" id="total-summary">
+          <p>$190.00 </p>
+        </div>
+      </div>
+    </div>
+    <!-- /appointment-summary --> 
+  </div>
+  <!-- container --> 
+</header>
+<div id="main"> 
+  <!-- Page Content --> 
+  
+  <!-- PROGRESS -->
+  <div class="container-fluid" id="progress-bar">
+    <div class="row">
+      <div class="col-xs-3 line-status complete"> </div>
+      <div class="col-xs-3 line-status complete"> </div>
+      <div class="col-xs-3 line-status complete"> </div>
+      <div class="col-xs-3 line-status complete"> </div>
+    </div>
+    <!-- row --> 
+  </div>
+  <!-- /progress-bar --> 
+  
+  <!-- MY PAYMENTS -->
+  <section id="my-payments">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h3><span class="title-icon"><img src="img/payments-icon.png" width="43" height="31" alt="Payments"></span>PAYMENTS</h3>
+        </div>
+      </div>
+      <!-- /row -->
+      <div class="row after-title"> 
+        
+        <!-- CARDS --> 
+        
+        <!-- CARD DEFAULT -->
+        <div class="col-lg-3 col-md-4 col-sm-6 card-wrapper">
+          <div class="media my-card selected">
+            <div class="media-left media-middle">
+              <input type="radio" name="cardRadios" id="optionsRadios1" value="option1" checked>
+            </div>
+            <div class="media-body media-middle">
+              <div class="display-table">
+                <div class="table-cell">
+                  <h4 class="media-heading">42** **** **** 4117<br>
+                    <span class="default-card">(DEFAULT)</span></h4>
+                  <p>VALID THRU 05/19</p>
+                </div>
+                <div class="table-cell media-middle text-right"> <a href="" data-toggle="modal" data-target="#editCardModal"> <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span></a> </div>
+              </div>
+              <!-- /row --> 
+            </div>
+            <!-- /media-body --> 
+            
+          </div>
+          <!-- /my-card --> 
+        </div>
+        <!-- /col-3 --> 
+        
+        <!-- CARD NOT DEFAULT -->
+        <div class="col-lg-3 col-md-4 col-sm-6 card-wrapper">
+          <div class="media my-card">
+            <div class="media-left media-middle">
+              <input type="radio" name="cardRadios" id="optionsRadios1" value="option2">
+            </div>
+            <div class="media-body media-middle">
+              <div class="display-table">
+                <div class="table-cell">
+                  <h4 class="media-heading">42** **** **** 4117<br>
+                    <br>
+                  </h4>
+                  <p>VALID THRU 05/19</p>
+                </div>
+                <div class="table-cell media-middle text-right"> <a href="" data-toggle="modal" data-target="#editCardModal"> <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span></a> </div>
+              </div>
+              <!-- /row --> 
+            </div>
+            <!-- /media-body --> 
+            
+          </div>
+          <!-- /my-card --> 
+        </div>
+        <!-- /col-3 --> 
+        
+        <!-- ADD NEW -->
+        <div class="col-lg-3 col-md-4 col-sm-6 card-wrapper">
+          <div class="media my-card" id="add-new-card" data-toggle="modal" data-target="#editCardModal">
+            <div class="media-body media-middle">
+              <div class="display-table">
+                <div class="table-cell media-middle">
+                  <div class="media-left media-middle"> <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> </div>
+                </div>
+                <div class="table-cell media-middle">
+                  <h4 class="media-heading text-left">ADD A NEW<br>
+                    CREDIT CARD</h4>
+                </div>
+              </div>
+            </div>
+            <!-- /media-body --> 
+            
+          </div>
+          <!-- /my-dog-card --> 
+        </div>
+        <!-- /col-3 --> 
+        
+      </div>
+      <!-- /row --> 
+    </div>
+    <!-- /container --> 
+  </section>
+  <!-- /my-pets -->
+  
+  <section id="next-btn">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <button type="button" class="groomit-btn rounded-btn red-btn big-btn">CONTINUE</button>
+        </div>
+      </div>
+      <!-- row --> 
+    </div>
+    <!-- container --> 
+  </section>
+</div>
+<!-- /main --> 
+
+<!-- MODALS --> 
+
+<!-- EDIT CARD -->
+<div class="modal fade" id="editCardModal" tabindex="-1" role="dialog" aria-labelledby="editCardLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <h4 class="modal-title text-center" id="editCardLabel">PAYMENT</h4>
+        
+        <!-- INIT FORM -->
+        <form action="" class="material-form" role="form" method="post" id="paymentForm">
+          <fieldset>
+            
+            <!-- PAYMENT -->
+            <section id="payment">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <input class="form-control" name="" type="text" maxlenght="100" required />
+                      <span class="form-highlight"></span> <span class="form-bar"></span>
+                      <label class="control-label" for="">CARD HOLDER FULL NAME *</label>
+                    </div>
+                    <!-- /form-group --> 
+                  </div>
+                  <!-- col-6 -->
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <input class="form-control credit-card" name="" type="text" data-inputmask="'mask': '9999 9999 9999 9999'" required />
+                      <span class="form-highlight"></span> <span class="form-bar"></span>
+                      <label class="control-label" for="">CARD NUMBER *</label>
+                    </div>
+                    <!-- /form-group --> 
+                  </div>
+                  <!-- /col-6 --> 
+                </div>
+                <!-- /row -->
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="row">
+                      <div class="col-lg-5 col-xs-6">
+                        <div class="form-group select-form-group">
+                          <select class="form-control" name="" required>
+                            <option value="">Please Select</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                          </select>
+                          <label class="control-label" for="">EXPIRED MONTH *</label>
+                        </div>
+                        <!-- /form-group --> 
+                      </div>
+                      <!-- /col -->
+                      <div class="col-lg-7 col-xs-6">
+                        <div class="form-group select-form-group">
+                          <select class="form-control" name="" required>
+                            <option value="">Please Select</option>
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                          </select>
+                          <label class="control-label" for="">EXPIRED YEAR *</label>
+                        </div>
+                        <!-- /form-group --> 
+                      </div>
+                      <!-- /col --> 
+                    </div>
+                    <!-- /row --> 
+                  </div>
+                  <!-- col-6 -->
+                  <div class="col-sm-6">
+                    <div class="row">
+                      <div class="col-lg-5 col-xs-6">
+                        <div class="form-group">
+                          <input class="form-control" name="" type="number" min="000" max="9999" maxlength="4" required />
+                          <span class="form-highlight"></span> <span class="form-bar"></span>
+                          <label class="control-label" for="">CVV *</label>
+                        </div>
+                        <!-- /form-group --> 
+                      </div>
+                      <!-- /col -->
+                      <div class="col-lg-5 col-xs-6">
+                        <div class="form-group">
+                          <input class="form-control" name="" type="text" maxlength="11" required />
+                          <span class="form-highlight"></span> <span class="form-bar"></span>
+                          <label class="control-label" for="">ZIP CODE *</label>
+                        </div>
+                        <!-- /form-group --> 
+                      </div>
+                      <!-- /col --> 
+                    </div>
+                    <!-- /row --> 
+                  </div>
+                  <!-- /col-6 --> 
+                </div>
+                <!-- /row -->
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <div class="checkbox">
+                        <label for="checkboxes-1">
+                          <input type="checkbox" name="" id="checkboxes-1">
+                          <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span> Make this default credit card. </label>
+                      </div>
+                      <!-- /checkbox --> 
+                    </div>
+                    <!-- /form-group --> 
+                  </div>
+                  <!-- /col-6 --> 
+                </div>
+                <!-- /row --> 
+              </div>
+              <!-- /container --> 
+            </section>
+            <section id="confirm-payment">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-12 text-center">
+                    <button type="submit" class="groomit-btn red-btn rounded-btn long-btn">CONFIRM</button>
+                  </div>
+                </div>
+                <!-- row --> 
+              </div>
+              <!-- /container --> 
+            </section>
+          </fieldset>
+        </form>
+        
+        <!-- /FORM --> 
+        
+      </div>
+      <!-- /modal-body --> 
+      
+    </div>
+    <!-- /modal-content --> 
+    
+  </div>
+</div>
+<!-- /editCardModal --> 
+
+<!-- LOGIN MODAL -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      
+      <!-- LOGIN -->
+      <div class="modal-body" id="login">
+        <h4 class="modal-title text-center" id="myModalLabel">Login</h4>
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+            <form id="loginForm" action="" name="loginForm">
+              <fieldset>
+                <div class="form-group">
+                  <label class="control-label" for="user-email">EMAIL*</label>
+                  <input type="email" name="user-email" id="user-email" class="form-control" required>
+                </div>
+                <!-- /form-group -->
+                <div class="form-group">
+                  <label class="control-label" for="last-name">PASSWORD*</label>
+                  <input type="password" name="password" id="password" class="form-control" required>
+                  <span class="help-block text-right" id="password-link"><a class="switch-content" data-content="forgot-password" title="Forgot your password?">Forgot your password?</a></span> </div>
+                <!-- /form-group -->
+                <div class="form-group">
+                  <button class="btn red-btn rounded-btn groomit-btn btn-block" type="submit">LOGIN</button>
+                  <p class="text-center" id="or">OR</p>
+                  <button class="btn blue-btn rounded-btn groomit-btn btn-block" type="button">LOGIN WITH FACEBOOK</button>
+                </div>
+                <!-- /form-group -->
+                
+              </fieldset>
+            </form>
+          </div>
+        </div>
+        <!-- /row --> 
+      </div>
+      <!-- /login --> 
+      
+      <!-- FORGOT PASSWORD -->
+      <div class="modal-body hidden" id="forgot-password">
+        <h4 class="modal-title text-center" id="myModalLabel">FORGOT YOUR PASSWORD?</h4>
+        <p class="text-center">Please enter your email and we will get you back on track.</p>
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+            <form id="recorvePassForm" action="">
+              <fieldset>
+                <div class="form-group">
+                  <label class="control-label" for="user-email">EMAIL*</label>
+                  <input type="email" name="user-email" id="user-email" class="form-control" required>
+                </div>
+                <!-- /form-group --> 
+                <br>
+                <div class="form-group">
+                  <button class="btn red-btn rounded-btn groomit-btn btn-block" type="submit">SUBMIT</button>
+                </div>
+                <!-- /form-group -->
+                
+              </fieldset>
+            </form>
+          </div>
+        </div>
+        <!-- /row --> 
+      </div>
+      <!-- /forgot-password --> 
+      
+      <!-- ENTER TEMPORARY KEY -->
+      <div class="modal-body hidden" id="temporary-key">
+        <h4 class="modal-title text-center" id="myModalLabel">ENTER TEMPORARY KEY</h4>
+        <p class="text-center">Please enter the temporary key we have sent to your email address.</p>
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+            <form id="temporaryKeyForm" action="">
+              <fieldset>
+                <div class="form-group">
+                  <label class="control-label" for="user-key">TEMPORARY KEY</label>
+                  <input type="text" name="user-key" id="user-key" class="form-control">
+                </div>
+                <!-- /form-group --> 
+                <br>
+                <div class="form-group text-center">
+                  <button class="btn black-btn rounded-btn groomit-btn switch-content" data-content="forgot-password" type="button">GO BACK</button>
+                  <button class="btn red-btn rounded-btn groomit-btn" type="submit">SUBMIT</button>
+                </div>
+                <!-- /form-group -->
+                
+              </fieldset>
+            </form>
+          </div>
+        </div>
+        <!-- /row --> 
+      </div>
+      <!-- /temporary-key --> 
+      
+      <!-- UPDATE PASSWORD -->
+      <div class="modal-body hidden" id="update-password">
+        <h4 class="modal-title text-center" id="myModalLabel">UPDATE PASSWORD</h4>
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+            <form id="updatePassForm" action="">
+              <fieldset>
+                <div class="form-group">
+                  <label class="control-label" for="new-password">ENTER NEW PASSWORD</label>
+                  <input type="text" name="new-password" id="new-password" class="form-control">
+                </div>
+                <!-- /form-group -->
+                <div class="form-group">
+                  <label class="control-label" for="confirm-password">CONFIRM PASSWORD</label>
+                  <input type="text" name="confirm-password" id="confirm-password" class="form-control">
+                </div>
+                <!-- /form-group --> 
+                <br>
+                <div class="form-group text-center">
+                  <button class="btn black-btn rounded-btn groomit-btn switch-content" data-content="temporary-key" type="button">GO BACK</button>
+                  <button class="btn red-btn rounded-btn groomit-btn" type="submit">SUBMIT</button>
+                </div>
+                <!-- /form-group -->
+                
+              </fieldset>
+            </form>
+          </div>
+        </div>
+        <!-- /row --> 
+      </div>
+      <!-- /update-password --> 
+      
+    </div>
+    <!-- /modal-content --> 
+    
+  </div>
+</div>
+<!-- /modal --> 
+
+<script src="js/jquery.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug --> 
+<script src="js/ie10-viewport-bug-workaround.js"></script> 
+<script src="js/owlCarousel/owl.carousel.min.js"></script> 
+<script src="js/jquery.inputmask.bundle.js"></script> 
+<script src="js/scripts.js"></script>
+</body>
+</html>

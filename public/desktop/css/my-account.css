@@ -1,0 +1,466 @@
+@charset "utf-8";
+
+.c-photo_myaccount {
+    position: relative;
+    min-height: 130px;
+    width: 130px;
+}
+
+.c-photo__mask {
+    overflow: hidden;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: 0;
+}
+
+.c-photo__mask--profile {
+    border: 5px solid #eeecec;
+    border-radius: 50% !important;
+}
+
+.c-photo__uploaded-photo {
+    display: block;
+    max-width: none;
+}
+
+
+.c-photo.c-photo_small  {
+    position: relative;
+    min-height: 65px;
+    width: 100%;
+}
+
+.c-photo__mask_small  {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+@media (min-width: 768px) {
+    .row-same-height {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display:         flex;
+      }
+      
+      .row-same-height .groomit-card.groomit-card-appt{
+          height:100%;
+          padding-bottom:0;
+      }
+}
+@media (max-width: 767px) {
+    .text-xs-center, .text-xs-center.text-right, .text-xs-center.text-left{
+      text-align: center;
+    } 
+}
+
+
+#upload{
+    max-width: 100%;
+    margin:0;
+}
+
+
+input[type=file]#upload_certificate, input[type=file].upload_certificate{
+    display: none;
+}
+
+.upload_input{
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+.upload_input.disabled{
+    cursor: not-allowed;
+    pointer-events: all;
+}
+.w-100{
+    width: 100%;
+}
+.form-profile-info .form-group{
+    margin-bottom:0;
+}
+
+.row{
+    margin-bottom:0 ;
+}
+
+
+
+.groomit-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
+.groomit-card a svg.edit-i{
+    border-radius: 100%;
+    background: #A50E27;
+    color: #fff;
+    display: block;
+    width: 25px !important;
+    height: 25px;
+    text-align: center;
+    padding: 6px 0;
+}
+.groomit-card.groomit-card-pet{
+    padding: 0 15px 0 0;
+    overflow: hidden;
+}
+.groomit-card h2, h3.groomit-card-title{
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    margin:0;
+}
+h3.groomit-card-title{
+    margin: 15px 0;
+}
+.groomit-card h3{
+    font-family: Open Sans;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+    margin:0;
+}
+
+.groomit-card h3 .share-i{
+    color: #A50E27;
+    font-size: 12px;
+    margin-left:3px;
+}
+
+form:not(.material-form) .groomit-card label,
+.groomit-card label{
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #7B7575;
+    margin-left:0;
+    margin:7px 0 1px 0;
+    display: block;
+}
+
+form:not(.material-form) .groomit-card label strong,
+.groomit-card label strong{
+    color: #000;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: normal;
+    padding-left: 5px;
+}
+
+form:not(.material-form) .groomit-card label.card-label,
+.groomit-card label.card-label{
+    line-height: 16px;
+    letter-spacing: 0.2em;
+}
+.groomit-card_account_photo{
+    margin-top:-65px;
+}
+.px-30{
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+}
+
+.h100p{
+    height: 100%;
+}
+
+#homeUserCarousel .carousel-indicators li {
+    background-color: #d0d0d0;
+    height: 15px;
+    width: 15px;
+}
+#homeUserCarousel .carousel-indicators {
+    bottom:2%;
+}
+#homeUserCarousel .carousel-indicators .active {
+    background-color: #bd1a2a;
+}
+
+.groomit-card-carousel{
+    padding:0;
+    overflow:hidden;
+    height: 100%;
+}
+
+.rating-i{
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    color: #FBD15B;
+    font-size: 34px;
+    background: #EAEAEA;
+    margin: 0;
+}
+
+.groomit-card h3 a.info-link {
+    border-radius: 30px;
+    padding: 0;
+    background: #fff;
+    margin-top: 1px;
+    margin-left: 5px;
+    display: inline-block;
+    border: 1px solid #626262;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+}
+
+.groomit-card h3 a.info-link svg{
+    font-size: 12px;
+    color: #626262;
+}
+
+form:not(.material-form) label, #frm_pet .control-label{
+    margin-left: 0;
+}
+
+
+.icon-groomit{
+    padding: 4px;
+    border-radius: 5px;
+    background:#d0d0d0;
+    margin-right: 4px;
+}
+
+.icon-groomit img{
+    display:block;
+}
+.groomit-card .outline-btn{
+    width: 80%;
+}
+.groomit-card .fav-groomer{
+    font-size: 22px;
+}
+
+.avatar-loading{
+    background:#f2f2f2;
+    width:100%;
+    height:100%;
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.glyphicon-heart{
+    color:#bd1a2a;
+}
+.groomit-card .groomit-card{
+    background:#f2f2f2;
+    box-shadow: none;
+    border: 1px solid #f2f2f2;
+}
+.tip-to .input-tip-to{
+    border: 1px solid #000;
+    background:#fff;
+    border-right: none;
+    border-radius: 10px 0 0 10px;
+    line-height: 22px;
+    display: flex;
+    padding: 0 0 0 8px;
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.input-tip-to-amount{
+    background: #fff;
+    display: flex;
+    border: 1px solid #000;
+    border-left:0;
+    border-right:0;
+    line-height: 22px;
+    padding: 0;
+    font-family: Open Sans;
+    font-weight: 600;
+    height: auto;
+    outline: none !important;
+}
+.input-tip-to-amount:focus, .input-tip-to-amount:active {
+    outline: none !important;
+    border: 1px solid #000;
+    border-left:0;
+    border-right:0;
+    background:#fff !important;
+    box-shadow: none !important;
+}
+.tip-to button{
+    background: #bd1a2a;
+    border-left: none;
+    border-radius: 0 10px  10px 0;
+    line-height: 22px;
+    padding: 0 12px;
+    font-size: 12px;
+    font-family: Open Sans;
+    font-weight: 600;
+    height: auto;
+    color: #fff;
+    outline:none !important;
+}
+.tip-to button:hover{
+    background: #79111B ;
+    color:#fff;
+}
+
+.input-tip-to-amount::-webkit-outer-spin-button,
+.input-tip-to-amount::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+/* Firefox */
+.input-tip-to-amount[type=number] {
+-moz-appearance: textfield;
+}
+
+.cont-avatar{
+    position:absolute;
+    top:0;
+    left:0;
+    min-width:100%;
+    max-width:100%;
+    display:block;
+    overflow:hidden;
+    padding-left:15px;
+}
+
+
+
+.avatar-mask{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+.circle-avatar {
+    border-radius:50%;
+    border:1px solid #f2f2f2;
+    width:100%;
+    text-align:center;
+    overflow: hidden;
+    height: 0px;
+    background:#f2f2f2;
+    position: relative;
+    transition: .3s;
+    opacity: 1;
+}
+
+.circle-avatar img {
+    position: absolute;
+    top: 0;
+    left:0;
+    opacity: 1;
+}
+.modal-fav-added .circle-avatar.preload{
+    height: 50px !important;
+    opacity: 0 !important;
+}
+.modal-fav-added .circle-avatar.preload img{
+    opacity: 0 !important;
+}
+.c-photo__mask--myaccount{
+    border-radius: 20px;
+    margin-bottom:5px;
+    overflow: hidden;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.groomit-card-pet .groomit-card_account_photo img{
+    margin: 0;
+    display: block;
+    box-shadow: none;
+    border-radius: 0;
+    width: 100%;
+}
+
+.groomit-card-pet .groomit-card_account_photo{
+    margin-top:0;
+}
+
+.rating-i{
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    color: #FBD15B;
+    font-size: 34px;
+    background: #EAEAEA;
+    margin: 0;
+}
+
+.groomit-card h3 a.info-link {
+    border-radius: 30px;
+    padding: 0;
+    background: #fff;
+    margin-top: 1px;
+    margin-left: 5px;
+    display: inline-block;
+    border: 1px solid #626262;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+}
+
+.groomit-card h3 a.info-link svg{
+    font-size: 12px;
+    color: #626262;
+}
+
+.groomit-card .fav-groomer-i{
+    font-size: 22px;
+}
+.groomit-card p{
+    font-size: 14px;
+}
+
+.groomit-card p.info{
+    line-height: 14px;
+}
+form:not(.material-form) label, #frm_pet .control-label{
+    margin-left: 0;
+}
+
+.c-photo.c-photo--myaccount {
+    min-height: 130px;
+    width: 130px;
+}
+.flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+.space-between { 
+    -webkit-align-content: space-between; 
+    align-content: space-between; 
+}  
+    
+.flex-item {
+    width: 100%;
+    height: initial;
+}

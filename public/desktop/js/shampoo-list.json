@@ -1,0 +1,36 @@
+[{
+        "id": 24,
+        "name": "Lavender & Sweet Almond",
+        "info": "Dog Shampoo & Conditioner",
+        "description": "<span class='green'>USDA Organic.</span> Chemical, paraben, preservatives and fragrance free. Antibacterial & antifungal.",
+        "image": "lavender.jpg"
+    },
+    {
+        "id": 25,
+        "name": "Unscented",
+        "info": "Dog Shampoo & Conditioner",
+        "description": "<span class='green'>USDA Organic.</span> Cleans and moisturize sensitive skin. Relieves itching. Chemical and dye free.",
+        "image": "unscented.jpg"
+    },
+    {
+        "id": 26,
+        "name": "Tea Tree & Aloe",
+        "info": "Dog Shampoo & Conditioner",
+        "description": "<span class='green'>USDA Organic.</span> Chemical, paraben, preservatives and fragrance free. Antibacterial & antifungal.",
+        "image": "teatree.jpg"
+    },
+    {
+        "id": 23,
+        "name": "Waterless Foaming Organic",
+        "info": "Cat Shampoo",
+        "description": "",
+        "image": "cat-shampoo.jpg"
+    },
+    {
+        "id": 32,
+        "name": "De-Shedding | $10",
+        "info": "Dog Shampoo",
+        "description": "Reduce shedding, dander and allergens with our Shed Control Shampoo. Made with Sweet Orange, Coconut Oil and Omega 3 Fatty Acids to moisturize and improve skin.<br><br>BENEFITS<br>Reduces excess shedding<br>Moisturizes & soothes<br>Adds shine and long-lasting manageability<br>Safe & gentle on your dog’s coat<br>Will not affect flea & tick treatments",
+        "image": "de-shedding.jpg"
+    }
+]

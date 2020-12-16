@@ -1,0 +1,20 @@
+[
+    {
+        "imageUrl":"grooming-photos.jpg",
+        "source":"<strong>Grooming Photos</strong>",
+        "altImage": "House call dog grooming",
+        "link": "/data/groomit-grooming-photos.zip"
+    },
+    {
+        "imageUrl":"logos.jpg",
+        "source":"<strong>Logos</strong>",
+        "altImage": "House call dog grooming",
+        "link": "/data/groomit-logos.zip"
+    },
+    {
+        "imageUrl":"app-images.jpg",
+        "source":"<strong>Groomit App Images</strong>",
+        "altImage": "House call dog grooming",
+        "link": "/data/groomit-app-images.zip"
+    }
+]

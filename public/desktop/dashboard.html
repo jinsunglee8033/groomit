@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Groomit</title>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+<link href="js/owlCarousel/assets/owl.carousel.min.css" rel="stylesheet">
+<link href="js/owlCarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/animate.min.css" rel="stylesheet">
+<link href="js/starrr/starrr.css" rel="stylesheet">
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<link href="css/header.css" rel="stylesheet">
+<link href="css/groomit.css" rel="stylesheet">
+<link href="css/dashboard.css" rel="stylesheet">
+<link href="css/material-forms.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!-- HEADER -->
+<header class="black-bg">
+  <div class="container"> 
+    
+    <!-- TOP BAR -->
+    <div class="row" id="top-bar">
+      <div class="col-xs-12">
+        <div class="hidden-sm hidden-xs custom-offset pull-left"></div>
+        <nav class="navbar navbar-groomit" role="navigation">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#groomit-navbar-collapse"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span> </button>
+            <a class="navbar-brand hidden-lg hidden-md hidden-sm" href="#"><img class="img-responsive" src="img/logo.png" alt="Groomit"/></a> </div>
+          <div class="collapse navbar-collapse" id="groomit-navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li> <a class="nav-link" data-text="Dashboard" href="index.html">Dashboard 
+                <!-- <span class="sr-only">(current)</span> --> 
+                </a> </li>
+              <li class="active"> <a class="nav-link" data-text="Appointments" href="#">Appointments 
+                <!-- <span class="sr-only">(current)</span> --> 
+                </a> </li>
+              <li> <a class="nav-link"  data-text="Dog Profile" href="#">Dog Profile 
+                <!-- <span class="sr-only">(current)</span> --> 
+                </a> </li>
+              <li> <a class="nav-link"  data-text="Payments" href="#">Payments 
+                <!-- <span class="sr-only">(current)</span> --> 
+                </a> </li>
+              <li> <a class="nav-link"  data-text="Messages" href="#">Messages 
+                <!-- <span class="sr-only">(current)</span> --> 
+                </a> </li>
+              <li> <a class="nav-link"  data-text="Help" href="#">Help 
+                <!-- <span class="sr-only">(current)</span> --> 
+                </a> </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown pull-right"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sofia <strong class="caret"></strong></a>
+                <ul class="dropdown-menu">
+                  <li> <a href="" data-toggle="modal" data-target="#editMyProfile">My Profile</a> </li>
+                  <li> <a href="#">Payments</a> </li>
+                  <li> <a href="#">Log Out</a> </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- /top-bar --> 
+    
+    <!-- LOGO -->
+    <div class="row" id="logo">
+      <div class="col-xs-12">
+        <div class="cont-logo hidden-xs"> <img class="img-responsive" src="img/logo.png" alt="Groomit"/> </div>
+        <!-- cont-logo --> 
+        
+        <!-- BREADCRUMBS -->
+        <div class="" id="breadcrumbs">
+          <h2 class="top-title">Book</h2>
+        </div>
+        <!-- /breadcrumbs --> 
+        
+        <!-- HEADER LOGIN -->
+        <div class="hidden" id="header-login"> <span class="visible-xs already-member">Already have an account?</span> <a class="groomit-btn red-btn rounded-btn pull-right" href="login.html">LOGIN</a> <span class="pull-right hidden-xs already-member">Already have an account?</span> </div>
+        <!-- /header-login --> 
+        
+      </div>
+      <!-- /col-12 --> 
+    </div>
+    <!-- /logo --> 
+    
+    <!-- APPOINTMENT SUMMARY -->
+    <div id="appointment-summary" class="hidden">
+      <div class="row">
+        <div class="col-md-12">
+          <h4 class="top-package-title">SILVER PACKAGE</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-9">
+          <p>Oatmeal Shampoo - De-Matting | $30.00 </p>
+        </div>
+        <div class="col-sm-3 text-right" id="total-summary">
+          <p>$190.00 </p>
+        </div>
+      </div>
+    </div>
+    <!-- /appointment-summary --> 
+    
+  </div>
+  <!-- container --> 
+</header>
+<div id="main"> 
+  <!-- Page Content -->
+  <div class="container-fluid" id="progress-bar">
+    <div class="row">
+      <div class="col-xs-3 line-status complete"> </div>
+      <div class="col-xs-3 line-status"> </div>
+      <div class="col-xs-3 line-status"> </div>
+      <div class="col-xs-3 line-status"> </div>
+    </div>
+    <!-- row --> 
+  </div>
+  <!-- /progress-bar --> 
+  
+  <!-- PET-APPOINTMENT -->
+  <section id="pet-appointment">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+          <div class="row" id="schedule">
+            <div class="col-xs-6">
+              <div class="media my-card text-center"> <a href="#">
+                <div class="media-left media-middle"> <img src="img/dog-icon_big.png" class="media-object" width="102" height="121" alt="Schedule Dog"> </div>
+                <div class="media-body media-middle">
+                  <h4 class="media-heading text-center">Schedule</h4>
+                </div>
+                </a> </div>
+              <!-- media --> 
+            </div>
+            <!-- /col-6 -->
+            <div class="col-xs-6">
+              <div class="media my-card text-center"> <a href="#">
+                <div class="media-left media-middle"> <img class="media-object" src="img/cat-icon_big.png" width="121" height="129" alt="Schedule Cat"></div>
+                <div class="media-body media-middle">
+                  <h4 class="media-heading text-center">Schedule</h4>
+                </div>
+                </a> </div>
+              <!-- media --> 
+            </div>
+            <!-- /col-6 --> 
+          </div>
+          <!-- /row --> 
+        </div>
+        <!-- /col-6 --> 
+      </div>
+      <!-- row --> 
+    </div>
+    <!-- /container --> 
+  </section>
+  <!-- /pet-appointment --> 
+  
+  <!-- BOTTOM-PANEL -->
+  <section id="bottom-panel">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+          <div id="bottom-panel-wrapper">
+            <div class="row"> 
+              
+              <!-- NO APPOINTMENTS --> 
+              <!-- Add "hidden" class if there are appointments -->
+              <div class="col-sm-6 col-sm-offset-3 bookings-history groomit-credits hidden">
+                <h4 class="text-center">Earn Groomit Credits</h4>
+                <div class="history-content">
+                  <div class="row">
+                    <div class="col-xs-12 text-center"> <img src="img/groomit-credits.png" width="209" height="137" alt="Groomit Credits"> </div>
+                    <!-- /col --> 
+                  </div>
+                  <!-- /row -->
+                  <div class="row">
+                    <div class="col-xs-12 text-center">
+                      <div class="rc-panel">
+                        <p><strong>Your Referral Code is <span class="referral-code">SOFIA7251.</span></strong></p>
+                        <p>Refer a friend and both receive 25% discount.</p>
+                      </div>
+                      <!-- /rc-panel --> 
+                    </div>
+                    <!-- /col --> 
+                  </div>
+                  <!-- /row --> 
+                </div>
+                <!-- /history-content --> 
+              </div>
+              <!-- /NO APPOINTMENTS --> 
+              
+              <!-- LAST BOOKING  --> 
+              <!-- Add "hidden" class if no last bookings -->
+              <div class="col-sm-6 bookings-history" id="last-booking">
+                <h4 class="text-center">Last Booking</h4>
+                <div class="pets-container"> 
+                  <!-- PET -->
+                  <div class="row"> 
+                    <!--<div class="col-xs-12 text-center">
+                      <div class="media history-pet">
+                        <div class="media-left media-middle"> 
+                          <div class="bh-pet-avatar">
+                            <div class="table-cell media-middle"><img src="img/cat-icon.png" width="53" height="56" alt="cat"></div>
+                          </div>
+                          <img src="img/demo.jpg" class="img-circle pet-photo hidden" width="221" height="225" alt="my pet"> </div>
+                        <div class="media-body media-middle">
+                          <p class="media-heading pet-name text-uppercase"><strong>Rudy</strong></p>
+                          <p class="package-name"><strong>Gold Service Package</strong></p>
+                        </div>
+                      </div>
+                    </div>-->
+                    
+                    <div class="col-md-6 text-center">
+                      <div class="media history-pet">
+                        <div class="media-left media-middle"> 
+                          <!-- pet avatar -->
+                          <div class="bh-pet-avatar">
+                            <div class="table-cell media-middle"><img src="img/cat-icon.png" width="53" height="56" alt="cat"></div>
+                          </div>
+                          <!-- pet photo --> 
+                          <img src="img/demo.jpg" class="img-circle pet-photo hidden" width="221" height="225" alt="my pet"> </div>
+                        <div class="media-body media-middle">
+                          <p class="media-heading pet-name text-uppercase"><strong>Rudy</strong></p>
+                          <p class="package-name">Gold Service Package</p>
+                        </div>
+                      </div>
+                      <!-- media --> 
+                    </div>
+                    <!-- /col -->
+                    
+                    <div class="col-md-6 text-center">
+                      <div class="media history-pet">
+                        <div class="media-left media-middle"> 
+                          <!-- pet avatar -->
+                          <div class="bh-pet-avatar">
+                            <div class="table-cell media-middle"><img src="img/cat-icon.png" width="53" height="56" alt="cat"></div>
+                          </div>
+                          <!-- pet photo --> 
+                          <img src="img/demo.jpg" class="img-circle pet-photo hidden" width="221" height="225" alt="my pet"> </div>
+                        <div class="media-body media-middle">
+                          <p class="media-heading pet-name text-uppercase"><strong>Rudy</strong></p>
+                          <p class="package-name">Gold Service Package</p>
+                        </div>
+                      </div>
+                      <!-- media --> 
+                    </div>
+                    <!-- /col -->
+                    
+                    <div class="col-md-6 text-center">
+                      <div class="media history-pet">
+                        <div class="media-left media-middle"> 
+                          <!-- pet avatar -->
+                          <div class="bh-pet-avatar">
+                            <div class="table-cell media-middle"><img src="img/cat-icon.png" width="53" height="56" alt="cat"></div>
+                          </div>
+                          <!-- pet photo --> 
+                          <img src="img/demo.jpg" class="img-circle pet-photo hidden" width="221" height="225" alt="my pet"> </div>
+                        <div class="media-body media-middle">
+                          <p class="media-heading pet-name text-uppercase"><strong>Rudy</strong></p>
+                          <p class="package-name">Gold Service Package</p>
+                        </div>
+                      </div>
+                      <!-- media --> 
+                    </div>
+                    <!-- /col --> 
+                    
+                  </div>
+                  <!-- /row --> 
+                </div>
+                <!-- /pets-container -->
+                <div class="history-content"> 
+                  
+                  <!-- DATE / TIME / ADDRESS -->
+                  <div class="row history-dt">
+                    <div class="col-md-5 col-md-offset-1 col-xs-6 text-center"> <span class="date-time-icon"><img src="img/calendar-icon.png" width="22" height="22" alt="Date and Time"></span>
+                      <p>03/27/2018</p>
+                      <p>08:00pm - 10:00pm</p>
+                    </div>
+                    <!-- /col -->
+                    <div class="col-md-5 col-xs-6 text-center"> <span class="address-icon"><img src="img/address-icon.png" width="auto" height="22" alt="Date and Time"></span>
+                      <p>Yonker 1091,</p>
+                      <p>Yonkers 10704, NY</p>
+                    </div>
+                    <!-- /col --> 
+                  </div>
+                  <!-- /row --> 
+                  
+                  <!-- GROOMER / RATE / TIP -->
+                  <div class="row history-groomer">
+                    <div class="col-xs-12 text-center">
+                      <div class="display-table">
+                        <div class="table-cell cell-groomer">
+                          <p><strong>Groomer</strong></p>
+                          <p>Very long groomer name</p>
+                        </div>
+                        <div class="table-cell cell-rating">
+                          <p><strong>Rate</strong></p>
+                          
+                          <!-- data-rating = initial/data-base value -->
+                          <div class="starrr" data-rating="4"></div>
+                          <input type="hidden" class="rating" name="rating" value="" />
+                        </div>
+                        <div class="table-cell cell-tip">
+                          <p><strong>Tip</strong></p>
+                          
+                          <!-- Tip options -->
+                          <div class="btn-group btn-group-justified tip-options" data-toggle="buttons">
+                            <label class="btn btn-st-opt">
+                              <input type="radio" name="" autocomplete="off" checked>
+                              <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>$20</label>
+                            <label class="btn btn-st-opt">
+                              <input type="radio" name="" autocomplete="off">
+                              <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>$30</label>
+                            <label class="btn btn-st-opt text-uppercase red-btn">
+                              <input type="radio" name="" autocomplete="off">
+                              Other</label>
+                          </div>
+                          
+                          <!-- Other tip: Edit -->
+                          <div class="other-tip-edit hidden">
+                          <div class="input-group">
+                            <label for="" class="table-cell media-middle">Other:</label>
+                            <div class="input-group-addon">$</div>
+                            <input type="number" name="otherTip" class="form-control pull-left">
+                            <span class="input-group-btn">
+                            <button class="btn red-btn groomit-btn" type="button"><span class="glyphicon glyphicon-ok"></span></button>
+                            </span> 
+                            
+                            </div>
+                            <span class="help-block" id="cancel-tip">Cancel</span>
+                            </div>
+                          
+                          <!-- Other tip -->
+                          <p class="other-tip hidden">Tip given: $<span class="other-tip-val"></span></p>
+                        </div>
+                        <!-- /table-cell --> 
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /row --> 
+                </div>
+                <!-- /history-content -->
+                
+                <div class="view-all text-center"><a href="#" title="View All" class="text-uppercase" target="_self">View All</a></div>
+              </div>
+              <!-- /LAST BOOKING --> 
+              
+              <!-- EARN GROOMIT CREDITS --> 
+              <!-- Add "hidden" class if there are past and next appointments -->
+              <div class="col-sm-6 bookings-history groomit-credits hidden">
+                <h4 class="text-center">Earn Groomit Credits</h4>
+                <div class="history-content">
+                  <div class="row">
+                    <div class="col-xs-12 text-center"> <img src="img/groomit-credits.png" width="209" height="137" alt="Groomit Credits"> </div>
+                    <!-- /col --> 
+                  </div>
+                  <!-- /row -->
+                  <div class="row">
+                    <div class="col-xs-12 text-center">
+                      <div class="rc-panel">
+                        <p><strong>Your Referral Code is <span class="referral-code">SOFIA7251.</span></strong></p>
+                        <p>Refer a friend and both receive 25% discount.</p>
+                      </div>
+                      <!-- /rc-panel --> 
+                    </div>
+                    <!-- /col --> 
+                  </div>
+                  <!-- /row --> 
+                </div>
+                <!-- /history-content --> 
+              </div>
+              <!-- /EARN GROOMIT CREDITS --> 
+              
+              <!-- NEXT BOOKING  --> 
+              <!-- Add "hidden" class if no next appointment -->
+              <div class="col-sm-6 bookings-history" id="next-booking">
+                <h4 class="text-center">Next Booking</h4>
+                <div class="pets-container"> 
+                  
+                  <!-- PET -->
+                  <div class="row"> 
+                    <!-- <div class="col-xs-12 text-center">
+                      <div class="media history-pet">
+                        <div class="media-left media-middle"> 
+                          <div class="bh-pet-avatar">
+                            <div class="table-cell media-middle"><img src="img/cat-icon.png" width="53" height="56" alt="cat"></div>
+                          </div>
+                          <img src="img/demo.jpg" class="img-circle pet-photo hidden" width="221" height="225" alt="my pet"> </div>
+                        <div class="media-body media-middle">
+                          <p class="media-heading pet-name text-uppercase"><strong>Rudy</strong></p>
+                          <p class="package-name"><strong>Gold Service Package</strong></p>
+                        </div>
+                      </div>
+                    </div>-->
+                    
+                    <div class="col-md-6 text-center">
+                      <div class="media history-pet">
+                        <div class="media-left media-middle"> 
+                          <!-- pet avatar -->
+                          <div class="bh-pet-avatar">
+                            <div class="table-cell media-middle"><img src="img/cat-icon.png" width="53" height="56" alt="cat"></div>
+                          </div>
+                          <!-- pet photo --> 
+                          <img src="img/demo.jpg" class="img-circle pet-photo hidden" width="221" height="225" alt="my pet"> </div>
+                        <div class="media-body media-middle">
+                          <p class="media-heading pet-name text-uppercase"><strong>Rudy</strong></p>
+                          <p class="package-name">Gold Service Package</p>
+                        </div>
+                      </div>
+                      <!-- media --> 
+                    </div>
+                    <!-- /col -->
+                    <div class="col-md-6 text-center">
+                      <div class="media history-pet">
+                        <div class="media-left media-middle"> 
+                          <!-- pet avatar -->
+                          <div class="bh-pet-avatar">
+                            <div class="table-cell media-middle"><img src="img/cat-icon.png" width="53" height="56" alt="cat"></div>
+                          </div>
+                          <!-- pet photo --> 
+                          <img src="img/demo.jpg" class="img-circle pet-photo hidden" width="221" height="225" alt="my pet"> </div>
+                        <div class="media-body media-middle">
+                          <p class="media-heading pet-name text-uppercase"><strong>Rudy</strong></p>
+                          <p class="package-name">Gold Service Package</p>
+                        </div>
+                      </div>
+                      <!-- media --> 
+                    </div>
+                    <!-- /col -->
+                    <div class="col-md-6 text-center">
+                      <div class="media history-pet">
+                        <div class="media-left media-middle"> 
+                          <!-- pet avatar -->
+                          <div class="bh-pet-avatar">
+                            <div class="table-cell media-middle"><img src="img/cat-icon.png" width="53" height="56" alt="cat"></div>
+                          </div>
+                          <!-- pet photo --> 
+                          <img src="img/demo.jpg" class="img-circle pet-photo hidden" width="221" height="225" alt="my pet"> </div>
+                        <div class="media-body media-middle">
+                          <p class="media-heading pet-name text-uppercase"><strong>Rudy</strong></p>
+                          <p class="package-name">Gold Service Package</p>
+                        </div>
+                      </div>
+                      <!-- media --> 
+                    </div>
+                    <!-- /col --> 
+                    
+                  </div>
+                  <!-- /row --> 
+                </div>
+                <!-- /pets-container -->
+                
+                <div class="history-content"> 
+                  
+                  <!-- DATE / TIME / ADDRESS -->
+                  <div class="row history-dt">
+                    <div class="col-md-4 col-xs-4 text-center"> <span class="date-time-icon"><img src="img/calendar-icon.png" width="22" height="22" alt="Date and Time"></span>
+                      <p>03/27/2018</p>
+                      <p>08:00pm - 10:00pm</p>
+                    </div>
+                    <!-- /col -->
+                    <div class="col-md-4 col-xs-4 text-center"> <span class="address-icon"><img src="img/address-icon.png" width="auto" height="22" alt="Date and Time"></span>
+                      <p>Yonker 1091,</p>
+                      <p>Yonkers 10704, NY</p>
+                    </div>
+                    <!-- /col -->
+                    <div class="col-md-4 col-xs-4 text-center"> <span class="groomer-icon"><img src="img/icon-service-dry-brush-out.png" width="30" height="30" alt="Groomer"></span>
+                      <p>Groomer</p>
+                      <p class="set-required">Not assigned</p>
+                    </div>
+                    <!-- /col --> 
+                  </div>
+                  <!-- /row -->
+                  <div class="row modify-appointment">
+                    <div class="col-md-8 col-md-offset-2">
+                      <div class="display-table">
+                        <div class="table-cell media-bottom">
+                          <button class="groomit-btn outline-btn red-btn btn-block rounded-btn">MODIFY</button>
+                        </div>
+                        <!-- /table-cell --> 
+                      </div>
+                      <!-- /display-table --> 
+                    </div>
+                    <!-- /col --> 
+                  </div>
+                  <!-- /row --> 
+                </div>
+                <!-- /history-content -->
+                
+                <div class="view-all text-center"><a href="#" title="View All" class="text-uppercase" target="_self">View All</a></div>
+              </div>
+              <!-- /NEXT BOOKING --> 
+              
+            </div>
+            <!-- /row -->
+            <div class="view-all text-center hidden" id="row-view-all"><a href="#" title="View All" class="text-uppercase" target="_self">View All</a></div>
+          </div>
+          <!-- /bottom-panel-wrapper --> 
+        </div>
+        <!-- /col --> 
+      </div>
+      <!-- row --> 
+    </div>
+    <!-- /container --> 
+  </section>
+  <!-- /bottom-panel -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+          <p class="text-uppercase">&copy; 2018 Groomit - Made with love in NYC.</p>
+        </div>
+        <!-- /col --> 
+      </div>
+      <!-- /row --> 
+    </div>
+    <!-- /container --> 
+  </footer>
+</div>
+<!-- /main -->
+
+<div class="modal fade" id="editMyProfile" tabindex="-1" role="dialog" aria-labelledby="editMyProfileLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      
+      <!-- INIT FORM -->
+      <form action="" class="material-form" role="form" method="post" id="userProfileForm">
+        <fieldset>
+          <div class="modal-body" id="view-profile">
+            <h4 class="modal-title text-center" id="editMyProfileLabel">MY PROFILE</h4>
+            
+            <!-- PROFILE -->
+            <section id="profile">
+              <div class="container" id="st-opt">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="my-photo"> 
+                      <!-- DEFAULT PROFILE PHOTO --> 
+                      <!-- required "demo-photo" class --> 
+                      <img class="demo-photo" src="img/my-profile.png" width="221" height="221"> 
+                      <!--<img class="demo-photo" src="img/cat-profile.png" width="237" height="194">--> 
+                      <!-- CUSTOM PROFILE PHOTO --> 
+                      <!-- remove "demo-photo" class --> 
+                      <!--<img src="">-->
+                      <div id="add-photo"><span class="glyphicon glyphicon-camera center-block" aria-hidden="true"></span>Add photo</div>
+                    </div>
+                    <div class="text-center">
+                      <button type="button" class="groomit-btn rounded-btn outline-btn black-btn switch-content" data-content="change-password">RESET PASSWORD</button>
+                    </div>
+                  </div>
+                  <!-- /col-3 -->
+                  <div class="col-md-8" id="pet-binfo">
+                    <div class="row">
+                      <div class="col-xs-6">
+                        <div class="form-group">
+                          <input class="form-control" name="" type="text" maxlenght="100" required />
+                          <span class="form-highlight"></span> <span class="form-bar"></span>
+                          <label class="control-label" for="">FIRST NAME <span class="set-required"><span class="hidden-sm hidden-xs">REQUIRED</span><span class="visible-sm visible-xs"> *</span></span></label>
+                        </div>
+                        <!-- /form-group --> 
+                      </div>
+                      <!-- /col-6 -->
+                      <div class="col-xs-6">
+                        <div class="form-group">
+                          <input class="form-control" name="" type="text" maxlenght="100" required />
+                          <span class="form-highlight"></span> <span class="form-bar"></span>
+                          <label class="control-label" for="">LAST NAME <span class="set-required"><span class="hidden-sm hidden-xs">REQUIRED</span><span class="visible-sm visible-xs"> *</span></span></label>
+                        </div>
+                        <!-- /form-group --> 
+                      </div>
+                      <!-- /col-6 --> 
+                    </div>
+                    <!-- /row -->
+                    
+                    <div class="row">
+                      <div class="col-xs-6">
+                        <div class="form-group">
+                          <input class="form-control" name="" type="text" maxlenght="100" required />
+                          <span class="form-highlight"></span> <span class="form-bar"></span>
+                          <label class="control-label" for="">PHONE NUMBER <span class="set-required"><span class="hidden-sm hidden-xs">REQUIRED</span><span class="visible-sm visible-xs"> *</span></span></label>
+                        </div>
+                        <!-- /form-group --> 
+                      </div>
+                      <!-- /col-6 -->
+                      <div class="col-xs-6">
+                        <div class="form-group">
+                          <input class="form-control" name="" type="email" maxlenght="100" required />
+                          <span class="form-highlight"></span> <span class="form-bar"></span>
+                          <label class="control-label" for="">EMAIL <span class="set-required"><span class="hidden-sm hidden-xs">REQUIRED</span><span class="visible-sm visible-xs"> *</span></span></label>
+                        </div>
+                        <!-- /form-group --> 
+                      </div>
+                      <!-- /col-6 --> 
+                    </div>
+                    <!-- /row --> 
+                    
+                  </div>
+                  <!-- /col-10 --> 
+                </div>
+                <!-- /row --> 
+                
+              </div>
+              <!-- /container --> 
+            </section>
+            <!-- /other-addons -->
+            
+            <section id="next-btn">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <button data-dismiss="modal" aria-label="Close" type="button" class="groomit-btn rounded-btn black-btn long-btn space-btn">CLOSE</button>
+                    <!--<button type="button" class="groomit-btn rounded-btn black-btn long-btn space-btn">CANCEL</button>-->
+                    <!--<button type="submit" class="groomit-btn rounded-btn red-btn long-btn">CONFIRM</button>--> 
+                    <button type="button" class="groomit-btn rounded-btn red-btn long-btn">EDIT</button>
+                  </div>
+                </div>
+                <!-- row --> 
+              </div>
+              <!-- container --> 
+            </section>
+          </div>
+          <!-- /modal-body --> 
+          
+          <!-- CHANGE PASSWORD -->
+          <div class="modal-body hidden" id="change-password"> 
+            <h4 class="modal-title text-center" id="editMyProfileLabel">MY PROFILE</h4>
+            
+            <!-- PROFILE -->
+            <section id="profile">
+              <div class="container" id="st-opt">
+                <div class="row">
+                   
+                  <div class="col-md-10 col-md-offset-1" id="pet-binfo">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <input class="form-control" name="" type="text" maxlenght="100" required />
+                          <span class="form-highlight"></span> <span class="form-bar"></span>
+                          <label class="control-label" for="">CURRENT PASSWORD <span class="set-required"><span class="hidden-sm hidden-xs">REQUIRED</span><span class="visible-sm visible-xs"> *</span></span></label>
+                        </div>
+                        <!-- /form-group --> 
+                      </div>
+                      <!-- /col-6 -->
+                    </div>
+                    <!-- /row -->
+                    
+                    <div class="row">
+                     <div class="col-xs-6">
+                        <div class="form-group">
+                          <input class="form-control" name="" type="text" maxlenght="100" required />
+                          <span class="form-highlight"></span> <span class="form-bar"></span>
+                          <label class="control-label" for="">NEW PASSWORD <span class="set-required"><span class="hidden-sm hidden-xs">REQUIRED</span><span class="visible-sm visible-xs"> *</span></span></label>
+                        </div>
+                        <!-- /form-group --> 
+                      </div>
+                      <!-- /col-6 --> 
+                      <div class="col-xs-6">
+                        <div class="form-group">
+                          <input class="form-control" name="" type="text" maxlenght="100" required />
+                          <span class="form-highlight"></span> <span class="form-bar"></span>
+                          <label class="control-label" for="">CONFIRM PASSWORD <span class="set-required"><span class="hidden-sm hidden-xs">REQUIRED</span><span class="visible-sm visible-xs"> *</span></span></label>
+                        </div>
+                        <!-- /form-group --> 
+                      </div>
+                      <!-- /col-6 -->
+                    </div>
+                    <!-- /row --> 
+                    
+                  </div>
+                  <!-- /col-10 --> 
+                </div>
+                <!-- /row --> 
+                
+              </div>
+              <!-- /container --> 
+            </section>
+            <!-- /other-addons -->
+            
+            <section id="next-btn">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <button type="button" class="groomit-btn rounded-btn black-btn long-btn space-btn switch-content" data-content="view-profile">GO BACK</button>
+                    <button type="button" class="groomit-btn rounded-btn red-btn long-btn">CONFIRM</button>
+                  </div>
+                </div>
+                <!-- row --> 
+              </div>
+              <!-- container --> 
+            </section>
+
+          
+          
+          </div>
+          <!-- /modal-body -->
+          
+        </fieldset>
+      </form>
+      <!-- /FORM --> 
+      
+    </div>
+    <!-- /modal-content --> 
+    
+  </div>
+</div>
+<script src="js/jquery.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug --> 
+<script src="js/ie10-viewport-bug-workaround.js"></script> 
+<script src="js/owlCarousel/owl.carousel.min.js"></script> 
+<script src="js/starrr/starrr.js"></script> 
+<script src="js/scripts.js"></script>
+</body>
+</html>

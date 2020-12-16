@@ -1,0 +1,95 @@
+/* Spaw pages */
+
+.spaw-heading {
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+
+.spaw-heading__txt {
+    font-size: 22px;
+    font-family: "Open Sans", sans-serif;
+    line-height: 40px;
+    color: #959595;
+}
+
+.spaw-heading__g-logo {
+    flex-grow: 1.5;
+}
+
+.spaw-heading__g-logo img {
+    padding-bottom: 11px;
+}
+
+@media only screen and (max-width: 1199px) {
+    .spaw-heading__txt {
+        font-size: 30px;
+        line-height: 42px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .spaw-heading__txt {
+        font-size: 22px;
+        line-height: 36px;
+    }
+    .spaw-heading__g-logo img {
+        padding-bottom: 8px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .spaw-heading__txt {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .spaw-heading__g-logo img {
+        padding-bottom: 9px;
+    }
+}
+
+
+/* Affiliate Main */
+
+.gr-affiliate__arrow {
+    flex-basis: 60px;
+    flex-grow: initial;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.gr-affiliate__item-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.gr-affiliate__step {
+    flex-grow: 3;
+    text-align: center;
+}
+
+@media only screen and (max-width: 991px) {
+    .gr-affiliate__arrow {
+        flex-basis: 15px;
+        padding: 0;
+    }
+    .gr-affiliate__item-title {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .gr-affiliate__arrow {
+        flex-basis: 0;
+        padding: 0 15px;
+        text-align: center;
+        flex-grow: 1;
+    }
+    .gr-affiliate__arrow img {
+        transform: rotate(90deg);
+        max-width: 15px;
+        height: auto;
+        margin: 30px auto;
+    }
+}

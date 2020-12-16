@@ -1,0 +1,317 @@
+body {
+    padding-bottom: 40px;
+    background-color: #eee;
+}
+
+.navbar {
+    margin-bottom: 0 !important;
+}
+
+
+/* Sign in */
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 50px auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+    margin-bottom: 10px;
+}
+.form-signin .checkbox {
+    font-weight: normal;
+}
+.form-signin .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+}
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+/* Table
+--------------------------------------------------*/
+#table{
+    font-size: 0.9em;
+}
+
+#table_wrapper {
+    font-size: 0.95em;
+}
+
+/* Detail Page
+--------------------------------------------------*/
+.detail .row {
+    border-bottom: 1px dashed #ddd;
+    margin: 5px 2% 5px 2%;
+    padding: 5px 0 9px 0;
+}
+
+.detail .row.no-border {
+    border: none;
+}
+.detail .btn.small{
+    font-size: 0.85em !important;
+    padding: 4px 7px;
+    margin: 0 10px;
+}
+
+/* application */
+.detail.application {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+    line-height: 2em;
+    color: #555;
+}
+
+.detail.application .category{
+    font-size: 1.25em;
+    line-height: 2.5em;
+    color: #000;
+    text-align: center;
+    background-color: #efefef;
+    border: 0;
+}
+
+.detail.application .question {
+    left: 30px;
+    color: #454545;
+    font-size: 1.15em;
+    font-weight: 500;
+}
+.detail.application .question:before {
+    font-family: "Glyphicons Halflings";
+    content: "\e080";
+    font-size: 0.8em;
+    padding-right: 4px;
+}
+.detail.application .answer {
+    margin-left: 30px;
+
+}
+.detail.application img{
+    max-width: 240px;
+    max-height: 200px;
+    margin: 0 auto;
+}
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 25px;
+    background-color: #f5f5f5;
+    padding: 5px;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* Etc.
+-------------------------------------------------- */
+.btn-right {
+    float: right !important;
+    margin-left: 10px;
+}
+.approve {
+    float: right !important;
+    margin-left: 22px;
+    font-size: 14px;
+}
+.approve select {
+    width: 120px;
+}
+.approved {
+    color: #00aa00;
+    font-weight: 500;
+}
+.text-red {
+    color: red;
+}
+
+/* application availability*/
+table {
+    width: 100%
+}
+
+.alert.alert-danger.detail, .alert.alert-success.detail {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 13px;
+    width: 100%;
+}
+/* Print
+-------------------------------------------------- */
+@media print {
+    @page {
+        size: auto;
+        margin: .5in .4in .5in .4in;
+    }
+
+    /* Set print area */
+    body * {
+        visibility: hidden;
+    }
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    body, h1, h2, h3, ol, ul, div {
+        border: 0;
+        float: none;
+        position: static;
+        overflow: visible;
+    }
+
+    #section-to-print, #section-to-print * {
+        visibility: visible;
+    }
+    #section-to-print {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .detail.application .category{
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .question, .answer {
+        display: inline;
+    }
+
+    /* avoid page break : works with table */
+    table {
+        width: 100%;
+        position: relative
+    }
+    img{
+        max-width: 240px;
+        max-height: 200px;
+        margin: 0 auto;
+        display: block;
+        page-break-inside: avoid;
+    }
+    .position-relative {
+        position: relative;
+    }
+    .no-page-break{
+        page-break-inside: avoid;
+        position: relative
+    }
+
+    /* start new page */
+    .new-page {
+        page-break-before: always;
+    }
+    /* show background color */
+
+    .detail.application .category{
+        background-color: #efefef !important;
+
+    }
+
+    .availabilityBoxCheck {
+        border: 1px solid #e6e6e6;
+    }
+    .availabilityBox input[type=checkbox]:checked + label {
+        background-color: #000 !important;
+    }
+
+}
+
+@media print and (color) {
+    * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
+
+/*
+Etc.
+*/
+
+.padding-10 {
+    padding: 10px;
+}
+
+#user input, #groomer input {
+    width: 70%;
+    display: inline;
+}
+
+#search_result .name{
+    line-height: 32px;
+    font-weight: 600;
+}
+
+.navbar-nav {
+    font-size: 13.5px;
+}
+
+/* messages */
+#detail.modal .modal-dialog{
+    overflow-y: initial !important
+}
+
+#detail.modal .modal-body{
+    height: 400px;
+    overflow-y: auto;
+}
+
+.left-message {
+    text-align: left;
+    background-color: #d9edf7;
+    border-radius: 5px;
+    margin-right: 25%;
+    margin-top: 16px;
+    padding: 16px;
+    width: 75%;
+}
+
+.right-message {
+    text-align: right;
+    background-color: #dff0d8;
+    border-radius: 5px;
+    margin-left: 25%;
+    margin-top: 16px;
+    padding: 16px;
+    width: 75%;
+}
+
+.message-date {
+    font-size: 0.9em;
+    color: #666666;
+    margin: 5px 10px;
+}
+
+.navbar-inverse {
+    border-radius: 0 !important;
+}

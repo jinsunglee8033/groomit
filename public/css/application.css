@@ -1,0 +1,371 @@
+/* Banner - General */
+
+.banner {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+}
+
+.banner .banner__title {
+    font-size: 32px;
+    font-family: 'Pacifico', cursive;
+    padding-top: 88px;
+    text-align: center;
+    width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+    .banner {
+        height: 50vh !important;
+    }
+    .banner .banner__title {
+        font-size: 28px;
+        line-height: 140%;
+        padding-top: 82px;
+    }
+}
+
+
+/* General */
+
+input[type=checkbox] {
+    border-color: #f4f4f4;
+}
+
+.section {
+    padding: 50px 0 30px 0;
+}
+
+.section .section--white {
+    background-color: white;
+}
+
+.section.section--grey-f4f4f4 {
+    background-color: #f4f4f4;
+}
+
+.section.section--grey-dadada {
+    background-color: #dadada;
+}
+
+.section h2 {
+    margin: 0 0 50px 0;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+h2.section__title--w-subtitle {
+    margin-bottom: 10px;
+}
+
+.table-cell label {
+    margin-bottom: 0;
+}
+
+ul>li {
+    list-style-type: none;
+}
+
+ul>li>p .svg-inline--fa {
+    font-size: xx-small;
+    margin-right: 10px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.red {
+    color: #b61b22 !important;
+}
+
+
+/* Bootstrap overrides */
+
+.form-control {
+    border-radius: 24px !important;
+    height: 42px !important;
+}
+
+.btn {
+    border-radius: 24px !important;
+}
+
+.form-group {
+    margin-bottom: 20px !important;
+}
+
+select {
+    -webkit-appearance: none;
+}
+
+#success .modal-dialog,
+#error .modal-dialog {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    width: 500px;
+    margin-top: 0;
+}
+
+#success .modal-content,
+#error .modal-content {
+    width: 100%;
+}
+
+#success .modal-dialog .modal-header,
+#error .modal-dialog .modal-header {
+    padding-top: 30px;
+}
+
+#success .modal-dialog .modal-body,
+#error .modal-dialog .modal-body {
+    padding: 0 15px;
+}
+
+#success .modal-dialog .modal-footer,
+#error .modal-dialog .modal-footer {
+    text-align: center !important;
+    padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+    #success .modal-dialog,
+    #error .modal-dialog {
+        width: calc(100% - 20px);
+    }
+}
+
+
+/* Helpers */
+
+.font-weight-normal {
+    font-weight: normal !important;
+}
+
+.font-weight-bolder {
+    font-family: 'Open Sans ExtraBold', 'Open Sans', sans-serif;
+    font-weight: 800;
+}
+
+
+/* Why Style with Groomit */
+
+#why-groomit iframe {
+    min-height: 285px;
+}
+
+@media only screen and (max-width: 991px) {
+    #why-groomit iframe {
+        margin-bottom: 30px;
+    }
+}
+
+
+/* Application */
+
+#application-main a:not(.btn),
+#application-main a:not(.btn):visited {
+    color: #b61b22 !important;
+    text-decoration: none !important;
+}
+
+#application-main a:not(.btn):hover {
+    text-decoration: underline !important;
+}
+
+#frm_app {
+    margin-bottom: 0;
+}
+
+.banner#application-banner {
+    background-image: url('../images/work-with-us.jpg');
+}
+
+.availability {
+    margin-bottom: 30px;
+}
+
+.availability .availability__row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 5px 0 0 0;
+}
+
+.availability .availability__col {
+    text-align: center;
+    flex-grow: 1;
+    flex-basis: 0px;
+}
+
+.availability .availability__col.availability__am-pm,
+.availability .availability__col.availability__hour {
+    min-width: 20px;
+    flex-grow: 0.5;
+}
+
+.availability .availability__col.availability__hour.availability__hour--all {
+    flex-grow: 1;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.availability .availability__am-pm {
+    font-size: xx-small;
+    text-align: right;
+}
+
+.availability__time:nth-child(odd) {
+    background-color: #e2dfdf;
+}
+
+.availability input[type=checkbox]+label {
+    position: relative;
+    background: #fff;
+    height: 20px;
+    width: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: #e7e5de;
+    margin: 0;
+}
+
+.availability input[type=checkbox] {
+    display: none;
+}
+
+.availability input[type=checkbox]:checked+label {
+    background: #000;
+}
+
+
+/*.c-photo {
+    display: inline-block;
+}
+
+.c-photo-profile {
+    background-color: #eeecec;
+    padding: 5px;
+    border: solid 1px #e7e5de;
+    border-radius: 50%;
+}
+
+.c-photo__uploaded-photo {
+    width: 120px;
+    height: 120px;
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: block;
+}
+
+#img_profile_photo {
+    border-radius: 50%;
+}
+*/
+
+#profile_photo,
+#groomed_photo {
+    max-width: 100%;
+}
+
+.c-photo {
+    position: relative;
+    min-height: 160px;
+    width: 130px;
+}
+
+.c-photo__mask {
+    overflow: hidden;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: 0;
+}
+
+.c-photo__mask--profile {
+    border: 5px solid #eeecec;
+    border-radius: 50% !important;
+}
+
+.c-photo__uploaded-photo {
+    display: block;
+    max-width: none;
+}
+
+.sample.c-photo__uploaded-photo {
+    opacity: 0.4 !important;
+}
+
+.c-photo p {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.form-group.inline-label .checkbox-inline {
+    margin: 0 5px 3px 5px;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 767px) {
+    .banner {
+        height: 50vh !important;
+    }
+    .banner#application-banner {
+        background-image: url('../images/work-with-us_sm.jpg');
+    }
+    .availability {
+        font-size: 10px;
+    }
+    .availability .availability__col.availability__hour.availability__hour--all {
+        font-size: 10px;
+        line-height: 11px;
+    }
+    .availability .availability__row {
+        padding: 12px 0 8px 0;
+        align-items: center;
+    }
+    #application-form .col-xs-6:nth-child(odd) {
+        padding-right: 5px;
+    }
+    #application-form .col-xs-6:nth-child(even) {
+        padding-left: 5px;
+    }
+    #application-form .col-xs-6 .checkbox-inline,
+    #application-form .col-xs-6 .radio-inline {
+        margin-bottom: 15px;
+    }
+    #application-form .display-table,
+    #application-form .table-cell {
+        display: block !important;
+    }
+    #application-form .table-cell.text-right {
+        text-align: left !important;
+    }
+    #application-form .table-cell label {
+        margin-bottom: 5px;
+    }
+}
+
+
+/* Navigation */
+
+@media only screen and (max-width: 768px) {
+    #WS-ScroLi {
+        display: none;
+    }
+}

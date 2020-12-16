@@ -1,0 +1,889 @@
+@charset "utf-8";
+
+/* Schedule Appointment */
+
+.global-error {
+    display: none;
+}
+
+section.schedule-appointment {
+    margin-top: 5rem;
+    margin-bottom: 7rem;
+}
+
+#zip-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    border-radius: 25px;
+    /*padding: 45px 15px;*/
+    padding-bottom: 45px;
+    margin-top: -150px;
+}
+
+#zip-box h3.form-title {
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 64px;
+    background-color: #c2303d;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin-bottom: 0;
+}
+
+#zip-box .alert {
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+#zip-box .alert.alert-info {
+    background-color: #fcf7bf;
+    color: black;
+    border-color: #FDFADC;
+}
+
+#zip-box h3:not(.form-title) {
+    color: #000000;
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 35px;
+    margin-bottom: 28px;
+}
+
+#zip-box p {
+    color: #000000;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+#zip-box .input-group {
+    margin: 21px auto;
+}
+
+#send-zip {
+    max-width: 350px;
+    margin-top: 18px;
+}
+
+#send-zip input {
+    height: 50px;
+    border-radius: 25px 0 0 25px;
+}
+
+#send-zip ::placeholder {
+    color: #7d8287;
+}
+
+#send-zip .red-btn {
+    border-radius: 0 25px 25px 0;
+    text-transform: uppercase;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#send-zip a {
+    margin-left: 10px;
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#send-zip #already {
+    margin-left: 15px;
+    text-align: left;
+    color: white;
+}
+
+#send-zip #already a {
+    color: white;
+}
+
+@media only screen and (max-width: 1199px) {
+    #send-zip #already {
+        /*padding-left: 30px;*/
+        max-width: 90%;
+    }
+    #zip-box .input-group {
+        max-width: 90%;
+    }
+}
+
+
+/* Benefits */
+
+#benefits {
+    background-color: #f6f6f6;
+    margin-top: 100px;
+}
+
+#benefits h2 {
+    margin-bottom: 45px;
+}
+
+#benefits h3 {
+    font-weight: bold;
+    color: black;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.benefits__video-container iframe {
+    border-radius: 20px;
+}
+
+#benefits .media-left {
+    width: 35%;
+    vertical-align: middle;
+}
+
+#benefits .media-body {
+    width: 65%;
+}
+
+#benefits .benefit-item {
+    margin-bottom: 35px;
+}
+
+#benefits .media-left,
+#benefits .media>.pull-left {
+    padding-right: 20px;
+    padding-left: 15%;
+}
+
+#benefits p {
+    color: black;
+    line-height: 140%;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 1199px) {
+    #benefits h3 {
+        font-size: 22px;
+    }
+    #benefits p {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    #benefits-video {
+        margin-bottom: 30px;
+    }
+    #benefits-video iframe {
+        height: 335px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #benefits {
+        margin-top: 60px;
+    }
+    #benefits-video iframe {
+        height: 195px;
+    }
+    #benefits h3 {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+    #benefits p {
+        font-size: 14px;
+    }
+    #benefits .media-left {
+        padding-left: 0;
+        padding-right: 20px;
+        width: 25%;
+    }
+    #benefits .media-body {
+        width: 75%;
+    }
+    .benefits__video-container iframe {
+        border-radius: 12px;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 767px) {
+    #benefits-video,
+    .benefit-item {
+        max-width: 400px;
+        margin-right: auto;
+        margin-left: auto;
+        float: none;
+    }
+}
+
+
+/* Zip available */
+
+.schedule-appointment .media-heading {
+    margin-bottom: 40px;
+}
+
+.schedule-appointment .media-left {
+    padding-right: 80px;
+}
+
+.schedule-appointment .media-body a.red-btn {
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 20px;
+    max-width: 330px;
+}
+
+section.schedule-appointment#zip-available #zip-box h4 {
+    color: black;
+    font-weight: 500;
+    line-height: 140%;
+    margin-bottom: 30px;
+}
+
+section.schedule-appointment#zip-available .media-body.media-middle {
+    max-width: 500px;
+    text-align: center;
+}
+
+section.schedule-appointment#zip-available #zip-box .schedule-appointment .media-left {
+    padding-right: 70px;
+}
+
+section.schedule-appointment#zip-available #zip-box {
+    /*padding: 30px 30px 45px 30px;	*/
+    padding: 30px;
+}
+
+section.schedule-appointment#zip-available #zip-box {
+    /*padding: 30px 30px 45px 30px;	*/
+    padding: 30px;
+}
+
+section.schedule-appointment#zip-available #zip-box {
+    /*padding: 30px 30px 45px 30px;	*/
+    padding: 30px;
+}
+
+section.schedule-appointment#zip-available .big-btn {
+    padding: 15px;
+}
+
+
+/* Zip not available */
+
+#zip-not-available #zip-box .input-group {
+    margin: 0;
+}
+
+#zip-not-available .media-left {
+    padding-right: 30px;
+}
+
+#zip-not-available #zip-box {
+    padding: 30px 0;
+}
+
+#zip-not-available .media-heading {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+#zip-not-available .btn {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+@media only screen and (max-width: 1199px) {
+    .schedule-appointment .media-left {
+        padding-right: 40px;
+    }
+    #zip-box h3.form-title {
+        font-size: 2rem;
+    }
+    section.schedule-appointment#zip-available {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+    #zip-not-available #zip-box {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .schedule-appointment .media-left {
+        padding-right: 40px;
+    }
+    /*.schedule-appointment .media-body a.red-btn {
+		max-width: 85%;
+	}*/
+}
+
+@media only screen and (max-height: 662px) and (min-width: 768px) {
+    section.schedule-appointment {
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+    }
+    section.schedule-appointment#zip-not-available {
+        margin-bottom: 4rem;
+    }
+    /*section.schedule-appointment:not(#zip-not-available) #zip-box {
+		padding: 25px 30px;
+	}*/
+    #send-zip {
+        margin-top: 2rem;
+    }
+    section.schedule-appointment#zip-available #zip-box,
+    section.schedule-appointment#zip-not-available #zip-box {
+        /*padding: 15px 15px 40px 15px;*/
+        padding: 15px;
+    }
+    section.schedule-appointment#zip-available .media-object {
+        max-height: 150px;
+        width: auto;
+    }
+    /*.schedule-appointment .media-body a.red-btn {
+		max-width: 85%;
+	}*/
+}
+
+@media only screen and (min-width: 768px) {
+    section.schedule-appointment#zip-available .media {
+        display: table;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    /*#schedule-appointment {
+		height: 100vh;
+		margin: 0;
+	}
+	#schedule-appointment .container, #schedule-appointment .row, #schedule-appointment .col-md-10 {
+		height: 100%;
+		width: 100%;
+	}
+	#schedule-appointment .row {
+		display: table;
+		margin: 0;
+	}
+	#schedule-appointment .col-md-10 {
+		display: table-cell;
+		vertical-align: middle;
+		padding: 0;
+	}*/
+    section.schedule-appointment,
+    section.schedule-appointment#zip-available {
+        margin-top: 0;
+    }
+    #zip-box {
+        /*border: none;
+		border-radius: 0;
+		padding: 30px 15px;*/
+        /*min-height: calc(100vh - 360px);*/
+    }
+    .schedule-appointment .container,
+    .schedule-appointment .col-md-10 {
+        padding: 0;
+    }
+    .schedule-appointment .row {
+        margin: 0;
+    }
+    #zip-box h3.form-title {
+        font-size: 2rem;
+    }
+    .schedule-appointment .media-heading {
+        margin-bottom: 30px;
+    }
+    .schedule-appointment .media-left {
+        padding-right: 0px;
+        display: inline-block;
+        margin-bottom: 10px;
+        max-height: 100px;
+        width: auto;
+    }
+    .schedule-appointment .media-object {
+        max-height: 100px;
+        width: auto;
+    }
+    .schedule-appointment .media-body a.red-btn {
+        text-transform: uppercase;
+        max-width: none;
+        margin-bottom: 0px;
+        font-size: 18px;
+        display: block;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    section.schedule-appointment#zip-available #zip-box {
+        text-align: center;
+        padding: 30px 15px;
+    }
+    section.schedule-appointment#zip-not-available #zip-box {
+        padding: 30px 0px;
+    }
+    #subscribe .row {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    #zip-not-available .media-left {
+        padding-right: 0px;
+        display: block;
+    }
+    #zip-not-available .media-object {
+        margin: 0 auto 10px auto;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 430px) {
+    #zip-not-available .media,
+    #zip-available .media {
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+/* FAQS */
+
+#faqs {
+    padding-bottom: 150px;
+}
+
+#faqs .panel-title a {
+    cursor: pointer;
+    display: block;
+    position: relative;
+}
+
+#faqs a.scrollToTop:after {
+    content: "\e113";
+    font-family: 'Glyphicons Halflings';
+    color: #bd1a2a;
+    position: absolute;
+    right: 0;
+}
+
+#faqs a.scrollToTop.collapsed:after {
+    content: "\e114";
+    font-family: 'Glyphicons Halflings';
+    color: #bd1a2a;
+    position: absolute;
+    right: 0;
+}
+
+
+/* VOUCHERS */
+
+
+/*#vouchers {
+	opacity: 0;
+}*/
+
+#vouchers.vouchers--gift-cards #top-banner {
+    background-image: url(../img/giftcard-banner.png);
+    background-position: bottom center;
+    min-height: 400px;
+}
+
+#vouchers.vouchers--membership #top-banner {
+    background-image: url(../img/subscription-header.jpg);
+    background-position: center center;
+    background-size: cover;
+    min-height: 375px;
+}
+
+#vouchers #top-banner #banner-title img {
+    max-width: 80%;
+}
+
+#vouchers #top-banner h2 {
+    font-size: 35px;
+}
+
+#vouchers section {
+    padding: 0;
+}
+
+#vouchers section h2 {
+    font-weight: bold !important;
+    font-size: 28px;
+    color: black;
+}
+
+#vouchers section#select-voucher h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold !important;
+    font-size: 22px;
+    color: black;
+    margin-bottom: 0;
+    margin-top: 35px;
+}
+
+#vouchers section#select-voucher p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400 !important;
+    font-size: 20px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+#voucher-benefits .b-text {
+    padding-left: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+}
+
+#voucher-benefits .display-table {
+    margin-bottom: 20px;
+}
+
+#voucher-benefits .table-cell {
+    vertical-align: middle;
+}
+
+#voucher-benefits .b-icon {
+    width: 44px;
+    text-align: center;
+    height: 44px;
+}
+
+#vouchers section#select-voucher {
+    margin-top: 30px;
+}
+
+#voucher-how h2 {
+    margin-bottom: 70px;
+}
+
+.v-left {
+    padding-right: 50px;
+}
+
+.v-right {
+    padding-left: 50px;
+}
+
+.voucher-card:hover {
+    -webkit-animation: pulse 1s;
+    animation: pulse 1s;
+}
+
+.voucher-card {
+    margin-top: 30px;
+}
+
+.btn-default {
+    border-radius: 25px;
+    color: white;
+    background-color: #bd212a;
+    border: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 16px;
+}
+
+.btn-default:hover,
+.btn-default:active,
+.btn-default:focus,
+.btn-default:active:hover {
+    color: white;
+    background-color: #8A191F;
+}
+
+.btn-default.buy-now:hover,
+.btn-default.buy-now:active,
+.btn-default.buy-now:focus,
+.btn-default.buy-now:active:hover {
+    color: white;
+    background-color: #8A191F;
+}
+
+.buy-now {
+    padding: 14px 56px;
+    margin: 35px 0 55px 0;
+    line-height: 100%;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.icon-how {
+    min-height: 110px;
+}
+
+.how-desc {
+    font-size: 20px;
+    max-width: 240px;
+    margin-left: 0;
+    margin-right: 0;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+#vouchers section#voucher-faqs {
+    padding: 90px 0;
+}
+
+#vouchers #get-it {
+    background-color: #e8e8e8;
+    padding: 40px 0;
+}
+
+#vouchers #get-it p {
+    font-size: 22px;
+    margin-bottom: 0;
+    line-height: 140%;
+}
+
+#voucher-how {
+    margin: 7rem 0 3rem 0;
+}
+
+
+/* Voucher - Payment */
+
+#voucher-payment {
+    margin-top: 50px;
+}
+
+#voucher-payment .voucher-card {
+    margin: 0 auto 50px auto;
+}
+
+#voucher-payment h2 {
+    margin-bottom: 50px;
+}
+
+#voucher-payment .checkbox label {
+    padding-left: 0;
+}
+
+#voucher-payment span.cr {
+    margin-top: 2px;
+}
+
+#voucher-payment .form-group.last {
+    margin: 0;
+}
+
+#thankyou-modal .modal-title {
+    text-transform: none;
+}
+
+#thankyou-modal p {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#thankyou-modal .modal-body {
+    padding-bottom: 30px;
+}
+
+@media only screen and (max-width:1199px) {
+    #vouchers.vouchers--gift-cards #top-banner {
+        /*background-position: bottom center;*/
+        min-height: 300px;
+    }
+}
+
+@media only screen and (max-width:991px) {
+    #vouchers.vouchers--gift-cards #top-banner {
+        height: auto;
+        background-size: 100% auto;
+        min-height: 250px;
+    }
+    #vouchers #voucher-how {
+        margin: 4rem 0 1rem 0;
+    }
+    #voucher-payment .voucher-card {
+        max-width: 400px;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    #vouchers.vouchers--membership #top-banner {
+        background-image: url(../img/subscription-header_sm.jpg);
+        min-height: 1px;
+    }
+    #vouchers.vouchers--gift-cards #top-banner {
+        background-image: url(../img/giftcard-banner_sm.jpg);
+        min-height: 300px;
+        background-size: 100% auto;
+    }
+    /*#vouchers.vouchers--gift-cards {
+        margin-top: 158px;
+    }*/
+    /*#vouchers.vouchers--gift-cards #top-banner {
+        background-position: center top 0px;
+        background-size: 300% auto;
+    }*/
+    #vouchers section#select-voucher {
+        margin-top: 20px;
+    }
+    .v-left {
+        padding-right: 15px;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .v-right {
+        padding-left: 15px;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .icon-how {
+        min-height: 90px;
+    }
+    .how-desc {
+        margin-bottom: 50px;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 200px;
+    }
+    .buy-now {
+        margin-bottom: 20px;
+    }
+    #vouchers section#voucher-how {
+        padding-top: 20px;
+    }
+    #vouchers section#voucher-faqs {
+        padding: 40px 0;
+    }
+    #voucher-faqs .panel-title a {
+        font-weight: normal;
+    }
+    #select-voucher p,
+    #voucher-benefits {
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #voucher-payment .voucher-card {
+        max-width: 100%;
+        width: 400px;
+    }
+    #vouchers #frm_payment {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    #vouchers #get-it p {
+        font-size: 18px;
+        margin-bottom: 10px;
+        line-height: 140%;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    #vouchers.vouchers--gift-cards #top-banner {
+        min-height: 200px;
+    }
+}
+
+
+/* Landscape */
+
+@media only screen and (max-device-width: 767px) and (orientation: landscape) {
+    #vouchers.vouchers--gift-cards #top-banner {
+        min-height: calc(100vh - 74px);
+    }
+}
+
+
+/* New Sign Up */
+
+
+/* New Profile Avatar */
+
+.profile-avatar {
+    background-color: #EAEAEA;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+.profile-avatar--no-photo {
+    background-size: 70% !important;
+    background-image: url('../img/profile.svg');
+}
+
+.profile-avatar--w-photo {
+    background-size: cover;
+}
+
+.profile-avatar__update {
+    position: absolute;
+    right: -7.5%;
+    bottom: 7.5%;
+    border-radius: 50%;
+    padding: 5px;
+    width: 15%;
+    height: 15%;
+    background-color: #BE182A;
+    background-image: url('../img/add-outline.svg');
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.profile-avatar__remove {
+    position: absolute;
+    right: -7.5%;
+    bottom: 7.5%;
+    border-radius: 50%;
+    padding: 5px;
+    width: 15%;
+    height: 15%;
+    background-color: #BE182A;
+    background-image: url('../img/add-outline.svg');
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(45deg);
+}
+
+.sign-up__ci-container {
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+#upload {
+    opacity: 0;
+}
+
+.upload-demo .upload-demo-wrap,
+.upload-demo .upload-result,
+.upload-demo.ready .upload-msg {
+    display: none;
+}
+
+.upload-demo.ready .upload-demo-wrap {
+    display: block;
+}
+
+.upload-demo.ready .upload-result {
+    display: inline-block;
+}
+
+.upload-demo-wrap {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width:767px) {
+    #signupForm {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .upload-demo-wrap {
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+    }
+}
