@@ -508,7 +508,7 @@
             z-index: 10000 !important;
         }
     </style>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQGtikp7nu9OJqF2Ogds59SsilNlPYLTw&libraries=places&callback=initMap"
+    <script src="https://maps.googleapis.com/maps/api/js?key=&libraries=places&callback=initMap"
             async defer>
     </script>
 

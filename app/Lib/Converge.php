@@ -17,30 +17,21 @@ use Illuminate\Support\Facades\DB;
 class Converge
 {
     //The PIN in demo was expired, so it'll not work if you execute it.
-    private static $api_url = 'https://api.demo.convergepay.com/VirtualMerchantDemo/processxml.do';
-    private static $ssl_merchant_id = '001349';
-    private static $ssl_user_id = 'webpage';
-    private static $ssl_pin = 'W48UPQ';
+    private static $api_url = '';
+    private static $ssl_merchant_id = '';
+    private static $ssl_user_id = '';
+    private static $ssl_pin = '';
 
     private static $skip_api_call_on_demo = true;
-//    private static $api_url = 'https://api.convergepay.com/VirtualMerchant/processxml.do';
-//    private static $ssl_merchant_id = '782639';
-//    private static $ssl_user_id = 'webapi';
-//    private static $ssl_pin = 'DOBHSBZJUBJBPS10VIXYLLB7BO776QN0HU6IBZE6F8FMN6OY2WNCU7OPCIOY1MKC';
 
 
     public static function init() {
         if (getenv('APP_ENV') == 'production') {
-            self::$api_url = 'https://api.convergepay.com/VirtualMerchant/processxml.do';
-            self::$ssl_merchant_id = '782639';
+            self::$api_url = '';
+            self::$ssl_merchant_id = '';
             self::$ssl_user_id = 'webapi';
-            self::$ssl_pin = 'DOBHSBZJUBJBPS10VIXYLLB7BO776QN0HU6IBZE6F8FMN6OY2WNCU7OPCIOY1MKC';
-        } /*else {
-            self::$api_url = 'https://api.convergepay.com/VirtualMerchant/processxml.do';
-            self::$ssl_merchant_id = '782639';
-            self::$ssl_user_id = 'webapi';
-            self::$ssl_pin = 'DOBHSBZJUBJBPS10VIXYLLB7BO776QN0HU6IBZE6F8FMN6OY2WNCU7OPCIOY1MKC';
-        }*/
+            self::$ssl_pin = '';
+        }
     }
 
     public static function complete($void_ref, $token, $amt, $ref_id, $category = 'S',  $type = 'S', $is_voided = false) {

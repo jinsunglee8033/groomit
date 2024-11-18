@@ -30,7 +30,7 @@
                         <td>
                             @if ($d->signed == 'Y')
                                 @if (!empty($d->e_doc_id))
-                                    <a href="https://api.eversign.com/api/download_final_document?access_key=30581f03071c1cf3d21eda05fbf32c39&business_id=56514&document_hash={{ $d->e_doc_id }}" target="_blank">Show eSignature Document</a>
+                                    <a href="https://api.eversign.com/api/download_final_document?access_key=&business_id=&document_hash={{ $d->e_doc_id }}" target="_blank">Show eSignature Document</a>
                                 @else
                                 @endif
                             @endif

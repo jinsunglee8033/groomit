@@ -66,7 +66,7 @@ class Helper
         try {
 
             //Focus postal_code only.
-            $url = "https://maps.googleapis.com/maps/api/geocode/json?latlng=$latitude,$longitude&result_type=postal_code&key=AIzaSyCOjd_MpYd0KaeqgMjjyYKMdxTC1SEPHDk";
+            $url = "https://maps.googleapis.com/maps/api/geocode/json?latlng=$latitude,$longitude&result_type=postal_code&key=";
             $ch = curl_init();
             curl_setopt($ch, CURLOPT_URL, $url);
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
@@ -118,7 +118,7 @@ class Helper
             $address = str_replace(' ', '+', $address);
 
             //$url = "http://maps.google.com/maps/api/geocode/json?address=$address&sensor=false";
-            $url = "https://maps.googleapis.com/maps/api/geocode/json?address=$address&key=AIzaSyCOjd_MpYd0KaeqgMjjyYKMdxTC1SEPHDk";
+            $url = "https://maps.googleapis.com/maps/api/geocode/json?address=$address&key=";
             $ch = curl_init();
             curl_setopt($ch, CURLOPT_URL, $url);
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);

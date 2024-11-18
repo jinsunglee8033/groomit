@@ -20,11 +20,11 @@ class eversign {
 
 
     # Groomers Agreement
-    private static $template_agreement = "cba2cf4a58fe4f9f9d03e318636995ab";
-    private static $template_w9 = "e2fa6b4fc72e45d7bf915ef99e4e2e94";
-    private static $template_ach = "c54c9903de3d47af93f6874bb185097a";
+    private static $template_agreement = "";
+    private static $template_w9 = "";
+    private static $template_ach = "";
 
-    private static $api_url = 'https://api.eversign.com/api/document?access_key=30581f03071c1cf3d21eda05fbf32c39&business_id=56514';
+    private static $api_url = 'https://api.eversign.com/api/document?access_key=&business_id=';
 
     ##
     //https://api.eversign.com/api/download_final_document
@@ -33,7 +33,7 @@ class eversign {
     //& document_hash = j6yMcaF2gQBIIS
     //& audit_trail = 1
     private static $api_url_final_document =
-        'https://api.eversign.com/api/download_final_document?access_key=30581f03071c1cf3d21eda05fbf32c39&business_id=56514';
+        'https://api.eversign.com/api/download_final_document?access_key=&business_id=';
 
     public static function post_sign($data) {
 
